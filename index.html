@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test test test</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="/noUiSlider-15.7.1/dist/nouislider.css" rel="stylesheet">
+    <script src="/noUiSlider-15.7.1/dist/nouislider.js"></script>
+</head>
+
+<body>
+    <div id="slider"></div>
+</body>
+
+<script>
+    var slider = document.getElementById('slider');
+
+    noUiSlider.create(slider, {
+        start: [20, 80],
+        connect: true,
+        range: {
+            'min': 0,
+            'max': 100
+        }
+    });
+</script>
+
+</html>
